@@ -6,14 +6,14 @@ public class 정수삼각형 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt(); // 첫 번째 입력을 받음
-        sc.nextLine(); // 개행 문자 소비
+        int n = sc.nextInt(); 
+        sc.nextLine();
 
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             String line = sc.nextLine();
-            String[] numbers = line.split("\\s+"); // 공백으로 분리
+            String[] numbers = line.split("\\s+"); 
             ArrayList<Integer> row = new ArrayList<>();
 
             for (String number : numbers) {
