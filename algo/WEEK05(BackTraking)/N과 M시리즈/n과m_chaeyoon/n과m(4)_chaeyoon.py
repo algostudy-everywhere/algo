@@ -13,7 +13,7 @@ def dfs(start):
         arr.pop()
 
 
-N,M=map(int,input().split())
+N,M = map(int,input().split())
 arr = []
 
 dfs(1)
