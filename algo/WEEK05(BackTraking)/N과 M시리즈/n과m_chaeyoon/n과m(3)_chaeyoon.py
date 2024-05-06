@@ -14,7 +14,7 @@ def dfs():
 
 
 N,M = list(map(int,input().split()))
-
 arr = []
+
 dfs()
  
