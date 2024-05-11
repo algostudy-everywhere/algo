@@ -1,4 +1,4 @@
-
+파이썬
 ``` python
 def solution(number, k):
     answer = ''
@@ -15,6 +15,7 @@ def solution(number, k):
     return answer
 
 ```
+자바
 
 ``` java
 
