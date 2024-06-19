@@ -1,0 +1,46 @@
+dx=[1,0,-1,0]
+dy=[0,-1,0,1]
+
+n=int(input())
+a=list(input())
+r=0
+x,y=0,0
+result=[]
+result.append([x,y])
+for i in a:
+    if i=="R":
+        r=(r+1)%4
+    elif i=="L":
+        r=(r-1)%4
+    else:
+        x+=dx[r]
+        y+=dy[r]
+        result.append([x,y])
+
+min_x=500
+min_y=500
+max_y=0
+max_x=0
+for i in result:
+    x,y=i
+    max_x=max(x,max_x)
+    max_y=max(y,max_y)
+    min_x=min(x,min_x)
+    min_y=min(y,min_y)
+
+w=(max_x-min_x)+1
+h=(max_y-min_y)+1
+
+
+
+for i in range(len(result)):
+    result[i][0]-=min_x
+    result[i][1]-=min_y
+
+miro=[['#']*h for i in range(w)]
+
+for i,j in result:
+    miro[i][j]='.'
+            
+for i in range(len(miro)):
+    print(''.join(miro[i]))
