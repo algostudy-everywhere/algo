@@ -1,6 +1,6 @@
 ## 완주하지 못한 선수
 
-
+```python
 def solution(participant, completion):
     answer = ''
     participant.sort()
@@ -18,11 +18,12 @@ def solution(participant, completion):
         
     
     return answer
+```
 
 
 ## 햄버거 만들기
 
-
+```python
 def solution(ingredient):
     answer = 0
     
@@ -49,10 +50,11 @@ def solution(ingredient):
     
     
     return answer
+```
 
 ## 구명보트
 
-
+```python
 def solution(people, limit):
     answer = 0
     people.sort()
@@ -67,3 +69,4 @@ def solution(people, limit):
             
 
     return len(people)-answer
+```
